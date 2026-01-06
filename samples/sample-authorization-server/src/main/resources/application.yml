@@ -25,6 +25,10 @@ spring:
                 - "http://localhost:8081/authorize/oauth2/code/authserver"
                 - "http://localhost:6274/oauth/callback" # mcp-inspector
                 - "https://claude.ai/api/mcp/auth_callback"
+                - "https://oauth.pstmn.io/v1/callback"
+              # not mandatory scopes, but provides getting token with this scope.
+              scopes:
+                - "mcp:tools"
     user:
       name: user
       password: password
