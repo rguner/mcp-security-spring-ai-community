@@ -29,9 +29,6 @@ spring:
               # not mandatory scopes, but provides getting token with this scope.
               scopes:
                 - "mcp:tools"
-    user:
-      name: user
-      password: password
 
 server:
   port: ${PORT:9000}
